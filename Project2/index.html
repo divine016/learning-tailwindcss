@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>home smart</title>
+  </head>
+  <body class="max-w-[2000px] mx-auto text-neutral-900 dark:text-neutral-200 bg-white dark:bg-neutral-800">
+    <nav class="mx-auto p-4 bg-amber-400 ">
+      <div class="container mx-auto flex items-center justify-between">
+        <a href="/" aria-label="go to home page" class="  lg:absolute lg:left-1/2 lg:-translate-x-1/2 z-50 hover:opacity-75 transition-opacity tlg:top-9">
+          <img width="200" class="w-48 md:w-64 lg:w-72" src="./aserts/logo.svg" alt="home smart logo">
+        </a>
+
+        <button id="menu" class="lg:hidden focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400 text-neutral-900 hover:text-neutral-600 transition-colors" aria-expanded="false" aria-label="Open Menu">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </button>
+        <div role="menubar" id="menubar" class="z-40 hidden flex-col gap-4 right-0 left-0 absolute top-16 shodow-xl bg-amber-400 text-center text-lg p-6 items-center lg:flex lg:flex-row lg:static lg:shadow-none lg:justify-between lg:w-full">
+          <a class="py-1 px-6 dark:text-neutral-900 focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400  hover:text-neutral-600 transition-colors" role="menuitem" href="/">Home</a>
+          <a class="py-1 px-6 dark:text-neutral-900 focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400  hover:text-neutral-600 transition-colors lg:mr-auto" role="menuitem" href="/">Contact</a>
+          <a class="py-1 px-6 dark:text-neutral-900 focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400  hover:text-neutral-600 transition-colors " role="menuitem" href="/">Login</a>
+          <a class=" py-2 px-6 bg-teal-800 text-white shadow-xl  hover:shadow-none focus:outline-none transition-shadow focus-visible:ring-4 ring-neutral-900 rounded-md ring-offset-4 ring-offset-amber-400 " role="menuitem" href="/">Sign Up</a>   
+        </div>
+      </div>
+    </nav>
+
+    <header class="relative pt-16 md:pt-24 lg:pt-48">
+      <div class="absolute inset-0 bottom-8 md:bottom-24 xl:bottom-32 -z-10 bg-gradient-to-b from-amber-400 to-amber-600"></div>
+      <div class="container mx-auto grid grid-rows-1 px-2 place-items-end">
+        <img class="row-start-1 row-end-2 col-start-1 col-end-2 mx-auto" src="./aserts/couch.png" alt="couch">
+        <img class="row-start-1 row-end-2 col-start-1 col-end-2 mx-auto w-40 sm:w-52 md:w-64 lg:w-72" src="./aserts/app.svg" alt="app">
+      </div>
+    </header>
+    <main class="grid gap-12 sm:gap-16 md:gap24 lg:gap-32 px-8 overflow-hidden">
+      <a href="#" class=" hover:bg-teal-700 hover:text-white py-2 px-6 bg-amber-400 dark:text-neutral-900 mx-auto my-12 flex gap-2 shadow-xl  hover:shadow-none focus:outline-none transition-shadow focus-visible:ring-4 ring-neutral-900 rounded-md ring-offset-4 ring-offset-amber-400">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+        </svg>        
+        <span>Download the App</span>
+      </a>
+
+      <section aria-labelledby="qualities" class="relative">
+        <img src="./aserts/dots.svg" alt="dots" aria-hidden="true" class="hidden lg:block absolute top-1/2 -translate-y-1/2 -left-24 xl:-left-7">
+        <img src="./aserts/dots.svg" alt="dots" aria-hidden="true" class="hidden lg:block absolute top-1/2 -translate-y-1/2 -right-24 xl:-right-7">
+        <h2 id="qualities" class="sr-only"> Our Qualities</h2>
+        <div class="container mx-auto max-w-5xl flex gap-12 items-start justify-center md:justify-between flex-wrap">
+          <div class="grid gap-4 justify-items-center text-center md:flex-1">
+            <div class="rounded-full border-8 border-amber-400 p-4">
+
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-12 h-12">
+                <path fill-rule="evenodd" d="M12 1.5a5.25 5.25 0 00-5.25 5.25v3a3 3 0 00-3 3v6.75a3 3 0 003 3h10.5a3 3 0 003-3v-6.75a3 3 0 00-3-3v-3c0-2.9-2.35-5.25-5.25-5.25zm3.75 8.25v-3a3.75 3.75 0 10-7.5 0v3h7.5z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <h3 class="text-3xl font-bold">Safe</h3>
+            <p>Our products are secure and private out-of-the-box</p>
+          </div>
+          <div class="grid gap-4 justify-items-center text-center md:flex-1">
+            <div class="rounded-full border-8 border-amber-400 p-4">
+             
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+              </svg>
+             
+            </div>
+            <h3 class="text-3xl font-bold">Efficient</h3>
+            <p>Feel good about your wallet and the environment</p>
+          </div>
+
+          <div class="grid gap-4 justify-items-center text-center md:flex-1">
+            <div class="rounded-full border-8 border-amber-400 p-4">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
+              </svg>
+             
+              
+            </div>
+            <h3 class="text-3xl font-bold">Proven</h3>
+            <p>Leading the Smart Home World for 10 years</p>
+          </div>
+
+        </div>
+      </section>
+      <section aria-labelby="partners" class="text-center grid gap-8 place-items-center"> 
+        <div class="grid gap-4">
+          <h2 id="partners" class="text-4xl font-bold text-amber-400">Our Partners</h2>
+          <p class="w-full max-w lg">
+            We have partnere with hundreds of smart home brands to help you create a smart home that fits your needs and does not lock you in.
+          </p>
+        </div>
+        <div class="flex flex-wrap justify-center gap-8 md:gap-x-16 max-w-2xl mx-auto">
+          <div class="p-4 bg-white dark:bg-neutral-600 shadow-md dark:shadow-xl rounded-md">
+            <img src="./aserts/partner1.svg" alt="partner" class="h-16 w-16">
+          </div>
+          <div class="p-4 bg-white dark:bg-neutral-600 shadow-md dark:shadow-xl rounded-md">
+            <img src="./aserts/partner2.svg" alt="partner" class="h-16 w-16">
+          </div>
+          <div class="p-4 bg-white dark:bg-neutral-600 shadow-md dark:shadow-xl rounded-md">
+            <img src="./aserts/partner3.svg" alt="partner" class="h-16 w-16">
+          </div>
+          <div class="p-4 bg-white dark:bg-neutral-600 shadow-md dark:shadow-xl rounded-md">
+            <img src="./aserts/partner4.svg" alt="partner" class="h-16 w-16">
+          </div>
+          <div class="p-4 bg-white dark:bg-neutral-600 shadow-md dark:shadow-xl rounded-md">
+            <img src="./aserts/partner5.svg" alt="partner" class="h-16 w-16">
+          </div>
+          <div class="p-4 bg-white dark:bg-neutral-600 shadow-md dark:shadow-xl rounded-md">
+            <img src="./aserts/partner6.svg" alt="partner" class="h-16 w-16">
+          </div>
+          <div class="p-4 bg-white dark:bg-neutral-600 shadow-md dark:shadow-xl rounded-md">
+            <img src="./aserts/partner7.svg" alt="partner" class="h-16 w-16">
+          </div>
+        </div>
+      </section>
+      <section aria-labelledby="home" class="relative">
+        <div class="flex flex-wrap-reverse gap-9 justify-center">
+          <div class="flex flex-wrap items-start lg:justify-center gap-6 flex-col">
+            <div class="flex flex-wrap flex-col items-start gap-2">
+              <h2 class="text-4xl font-bold"> Relax, you are home</h2>
+              <p class="max-w-md">
+                All youre supported hardware includes traditional im=nputs so you can intergrate our products into your house in a way that is best for everyone.
+              </p>
+            </div>
+
+            <a href="#" class=" hover:bg-teal-700 hover:text-white py-2 px-6 bg-amber-400 dark:text-neutral-900  flex gap-2 shadow-xl  hover:shadow-none focus:outline-none transition-shadow focus-visible:ring-4 ring-neutral-900 rounded-md ring-offset-4 ring-offset-amber-400">
+              Sigh Up
+            </a>
+          </div>
+          <img src="./aserts/table.png" alt="table">
+        </div>
+        <div class="absolute -z-10 -bottom-6 -right-32 aspect-square md:border-8 border-amber-400 rounded-full md:w-64 lg:w-96 xl:max-w-lg"></div>
+        <div class="bg-teal-900 h-24 -mx-8 mt-12 xl:h-48 xl:absolute 
+        w-screen -bottom-8 -z-10 xl:mt-0"></div>
+      </section>
+    </main>
+    <section aria-labelledby="contact" class="container mx-auto px-8 overflow-hidden ">
+      <div class="flex flex-wrap justify-center gap-12 md:gap-6 lg:gap-20">
+        <div class="md:flex-1 md:max-w-sm relative">
+          <img src="./aserts/lamp.png" alt="lamp" class="mx-auto">
+          <a href="#" class=" hover:bg-teal-700 hover:text-white py-2 px-6 w-max bg-amber-400 dark:text-neutral-900 mx-auto mt-12 md:mb-12 flex gap-2 shadow-xl  hover:shadow-none focus:outline-none transition-shadow focus-visible:ring-4 ring-neutral-900 rounded-md ring-offset-4 ring-offset-amber-400">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+            </svg>        
+            <span>Download the App</span>
+          </a>
+          <img src="./aserts/app.svg" alt="app" width="240" class="hidden md:block drop-shadow-xl absolute left-1/2 -translate-x-1/2 max-w-16">
+          <div class="absolute -z-10 -bottom-18 left-1/2 -translate-x-1/2 aspect-square md:border-8 border-amber-400 rounded-full lg:w-96 md:w-72"></div>
+        </div>
+        <form action="" class="relative border-8 border-neutral-900 p-6 rounded-lg grid gap-8 md:flex-1 md:max-w-lg my-4 md:my-12 lg:my-16 bg-white dark:bg-neutral-800">
+          <h2 id="contact" class="text-3xl font-bold">
+            Let's Connect
+          </h2>
+          <div class="relative">
+            <input type="text" id="name" class="peer form-input w-full border-4 border-amber-400 focus:ring-2 dark:focus:ring-offset-2 focus:ring-amber-400 focus:border-amber-400 focus:outline-none dark:bg-amber-400 dark:text-neutral-900 placeholder-transparent" placeholder="Your Name">
+            <label class= "peer-placeholder-shown:left-4 
+            peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-neutral-900 
+            peer-focus:-top-4 peer-focus:left-2
+            peer-focus:text-neutral-600
+            dark:peer-focus:text-neutral-300
+            
+            
+            transition-all text-neutral-400 font-bold uppercase absolute text-sm -top-4 left-2 -translate-y-1/2" for="name">Your Name</label>
+          </div>
+          <div class="relative">
+            <input type="email" id="email" class="peer form-input w-full border-4 border-amber-400 focus:ring-2 dark:focus:ring-offset-2 focus:ring-amber-400 focus:border-amber-400 focus:outline-none dark:bg-amber-400 dark:text-neutral-900 placeholder-transparent" placeholder="Your Email">
+            <label class= "peer-placeholder-shown:left-4 
+            peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-neutral-900 
+            peer-focus:-top-4 peer-focus:left-2
+            peer-focus:text-neutral-600
+            dark:peer-focus:text-neutral-300
+            
+            
+            transition-all text-neutral-400 font-bold uppercase absolute text-sm -top-4 left-2 -translate-y-1/2" for="email">Your Email</label>
+          </div>
+          <div class="relative">
+            <textarea name="content" id="content" cols="20" rows="5" class="peer form-textarea resize-none w-full border-4 border-amber-400 focus:ring-2 dark:focus:ring-offset-2 focus:ring-amber-400 focus:border-amber-400 focus:outline-none dark:bg-amber-400 dark:text-neutral-900 placeholder-transparent" placeholder="How can we help?"></textarea>
+            <label for="" class="peer-placeholder-shown:left-4 
+            peer-placeholder-shown:top-6 peer-placeholder-shown:text-neutral-900 
+            peer-focus:-top-3 peer-focus:left-2
+            peer-focus:text-neutral-600
+            dark:peer-focus:text-neutral-300
+            
+            
+            transition-all text-neutral-400 font-bold uppercase absolute text-sm -top-4 left-2 -translate-y-1/2" > How can we help?</label>
+          </div>
+         
+          <a class=" py-2 px-6 bg-teal-800 text-white w-max shadow-xl  hover:shadow-none focus:outline-none transition-shadow focus-visible:ring-4 ring-neutral-900 rounded-md ring-offset-4 ring-offset-white dark:ring-offset-amber-400 " role="menuitem" href="/">Submit</a>
+        </form>
+      </div>
+    </section>
+    <footer class="bg-amber-400 w-full mx-auto p-32 flex justify-center text-left items-center flex-wrap container ">
+      <a href="/" aria-label="go to home page" class="  lg:absolute lg:left-1/2 lg:-translate-x-1/2 z-50 hover:opacity-90 transition-opacity lg:top-9">
+        <img width="200" class="w-48 md:w-64 lg:w-72" src="./aserts/logo.svg" alt="home smart logo">
+      </a>
+      <div class="links">
+        <ul>
+          <li>
+            <a class="hover:opacity-90 transition-opacity lg:top-9 hover:font-bold" href="#">Home</a>
+          </li>
+          <li>
+            <a class="hover:opacity-90 transition-opacity lg:top-9 hover:font-bold"  href="#">Contact</a>
+          </li>
+          <li>
+            <a class="hover:opacity-90 transition-opacity lg:top-9 hover:font-bold"  href="#">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+      <div class="socials gap-x-4 flex">
+        <a href="#" class="hover:opacity-90 transition-opacity lg:top-9" >
+          <svg  xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 448 512"><path d="M224,202.66A53.34,53.34,0,1,0,277.36,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.41-30.41c-21-8.29-71-6.43-94.3-6.43s-73.25-1.93-94.31,6.43a54,54,0,0,0-30.41,30.41c-8.28,21-6.43,71.05-6.43,94.33S91,329.26,99.32,350.33a54,54,0,0,0,30.41,30.41c21,8.29,71,6.43,94.31,6.43s73.24,1.93,94.3-6.43a54,54,0,0,0,30.41-30.41c8.35-21,6.43-71.05,6.43-94.33S357.1,182.74,348.75,161.67ZM224,338a82,82,0,1,1,82-82A81.9,81.9,0,0,1,224,338Zm85.38-148.3a19.14,19.14,0,1,1,19.13-19.14A19.1,19.1,0,0,1,309.42,189.74ZM400,32H48A48,48,0,0,0,0,80V432a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V80A48,48,0,0,0,400,32ZM382.88,322c-1.29,25.63-7.14,48.34-25.85,67s-41.4,24.63-67,25.85c-26.41,1.49-105.59,1.49-132,0-25.63-1.29-48.26-7.15-67-25.85s-24.63-41.42-25.85-67c-1.49-26.42-1.49-105.61,0-132,1.29-25.63,7.07-48.34,25.85-67s41.47-24.56,67-25.78c26.41-1.49,105.59-1.49,132,0,25.63,1.29,48.33,7.15,67,25.85s24.63,41.42,25.85,67.05C384.37,216.44,384.37,295.56,382.88,322Z"/></svg>
+        </a>
+        <a class="hover:opacity-90 transition-opacity lg:top-9" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 512 512"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+        </a>
+        <a class="hover:opacity-90 transition-opacity lg:top-9" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+        </a>
+      </div>
+    </footer>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
