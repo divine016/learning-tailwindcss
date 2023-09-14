@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <main class="p-5">
+    <div class="p-5 text-center font-bold text-blue-500">Hello world in tailwind Css</div>
+    <div class="my-4 h-16 w-full rounded-md border-2 border-green-600 bg-slate-100 p-2 text-center">
+      <p class="text-center font-mono text-[30px] font-semibold">Buongiorno mi amor</p>
+    </div>
+    <!-- lets talk about layout. it talk about how elements are displayed on the website. -->
+    <div class="fixed h-10 w-10 bg-slate-600 top-0"></div>
+    <div class="flex justify-center space-x-3">
+      <div class="h-16 w-16 rounded-full bg-blue-400"></div>
+      <div class="h-16 w-16 rounded-full bg-blue-400"></div>
+    </div>
+    <div class="grid grid-cols-4 gap-2 mt-4">
+      <div class="bg-blue-400 h-16"></div>
+      <div class="bg-blue-400 h-16"></div>
+      <div class="bg-blue-400 h-16"></div>
+      <div class="bg-blue-400 h-16"></div>
+    </div>
+    <div class="max-md:block hidden">
+      <p>i would not apear on large SCREEN</p>
+    </div>
+  
+    <div class="sm:block hidden">
+      <p>i would  apear on large SCREEN</p>
+    </div>
+    <button class="my-2 rounded-lg px-4 py-2 text-white bg-blue-500 hover:bg-blue-800  active:bg-slate-900 focus:outline-indigo-100 ">
+      click me
+    </button>
+    <ul>
+      <li class="bg-white p-2  my-2 first:bg-yellow-300">item 1</li>
+      <li class="bg-white p-2  my-2 first:bg-yellow-300 odd:bg-blue-300 even:bg-green-300">item 2</li>
+      <li class="bg-white p-2  my-2 first:bg-yellow-300 odd:bg-blue-300 even:bg-green-300">item 3</li>
+      <li class="bg-white p-2  my-2 first:bg-yellow-300 odd:bg-blue-300 even:bg-green-300">item 4</li>
+      <li class="bg-white p-2  my-2 first:bg-yellow-300 odd:bg-blue-300 even:bg-green-300">item 5</li>
+      <li class="bg-white p-2  my-2 first:bg-yellow-300 odd:bg-blue-300 even:bg-green-300">item 6</li> 
+    </ul>
+    <!-- theme dark -->
+    <div class="card">
+      <h3 class="dark:text-slate-50 text=base font-medium tracking-tight text-slate-900">this is a text element</h3>
+      <p class="dark:text-slate-50 mt-2 text-sm text-slate-500">this tag is a way more longer p tag</p>
+      <button 
+      id="toogleDark"
+      class="text-blue-900 px-4 py-2 text-sm font-medium mt-7 bg-blue-100 rounded-md"
+      onclick="document.body.classList.toggle('dark')"
+      >toogle dark mode</button>
+    </div>
+    <p class="text2-xl text-chestnut bg-stone-100 p-[24px]">chesnut color</p>
+      
+        <!-- now we couls use the config file and extent the design we want so in orther for us to have chestnut we used in the line belor we go to the extend part found in the cnfig file and add a style as follows
+        colors{
+          chestnut: '#973f29'
+        } -->
+        <!-- another way to avoid all the tailwind classes is to use the @apply in tailwind to do that we go to the css file where we hae @tailwind base etcthen we we do the following
+        @layer components {
+          .card{
+            @apply claases to be applied
+          }
+        }
+        the above code take a bunch of classes for a specific div or design then use @apply to turn them into a single word which is used in the html. this is so as not to have too many claases in the html file.
+        this is not recomended as if you are working in an enterprise your company wont lnow the names you made for each design only if there is a standard. -->
+        
+        <!-- common misconceptions
+        - people say we are writing inline styles whereas we are using more classes. inline styling dont have media queries and they cant be reused. -->
+  </main>
+  
+  <script type="text/javaScript">
+    document.addEventListenner('DOMContentLoaded', () => {
+      const toogleDark = document.getElementById('toogleDark')
+      toogleDark.addEventListenner('click', function(){
+        if(document.documentElement.classList.includes('dark')){
+          document.documentElement.classList.remove('dark')
+        } else {
+          document.documentElement.classList.add('dark')
+        }
+        alert('click')
+      });
+    })
+  </script>
+
+        
+
+       
+      
+</body>
+</html>
